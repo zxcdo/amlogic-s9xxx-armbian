@@ -334,7 +334,7 @@ jobs:
           done
 
           mkdir -p /builder/build
-          ln -sf /builder/build ${GITHUB_WORKSPACE}/build
+          ln -sf /builder/build ${{ github.workspace }}/build
           ln -sf /builder/build /home/runner/work/_actions/ophub/amlogic-s9xxx-armbian/main/build
 
           sudo timedatectl set-timezone "${TZ}"
